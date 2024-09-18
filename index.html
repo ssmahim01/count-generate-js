@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count & Generate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- count Numbers -->
+
+    <h1 class="text-4xl sm:text-5xl font-black text-purple-500 text-center py-12">Count Numbers and Generate Quotes</h1>
+
+    <section class="sm:py-28 py-10 w-11/12 mx-auto flex flex-col sm:flex-row items-center">
+
+
+        <div class="sm:w-1/2 pb-14 sm:pb-0">
+            <h1 class="text-3xl font-extrabold text-gray-800 text-center">Welcome To Numbers</h1>
+    
+            <h2 class="text-2xl font-bold text-center pt-5">Number: <span id="count-num">0</span></h2>
+    
+            <div class="w-60 mx-auto flex justify-evenly items-center py-8">
+    
+                <button class="px-6 py-4 rounded-2xl text-yellow-400 text-xl font-extrabold bg-purple-600" id="add">+</button>
+        
+                <button class="px-6 py-4 rounded-2xl text-lime-400 text-2xl font-extrabold bg-red-400" id="decrease">-</button>
+            </div>
+        </div>
+
+        <!-- Quote generator Content -->
+
+        <div class="w-4/5 sm:w-1/2 mx-auto">
+            <h1 class="text-4xl font-extrabold text-center pb-5">Generate Quote</h1>
+    
+            <div class="sm:w-4/5 w-11/12 mx-auto flex justify-center items-center bg-slate-300 p-8 text-center shadow-md space-y-4 rounded-2xl mb-8">
+    
+                <div class="flex flex-col space-y-3">
+                    <p class="text-gray-800 font-extrabold" id="quote">Love is happiness, love never dies</p>
+                    <span class="text-pink-500 font-bold" id="person">Mahim Zayn</span>
+                </div>
+            </div>
+    
+            <div class="text-center">
+                <button class="bg-red-400 font-bold text-gray-800 px-5 py-3 rounded-full" id="btn">Generate</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js-dom/count.js"></script>
+    <script src="js-dom/quote.js"></script>
+
+</body>
+</html>
